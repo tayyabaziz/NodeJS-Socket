@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Socket</title>
+</head>
+<body>
+<input type="text" name="message" id="message">
+<button type="button" name="send" id="send">Send Message</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script> 
+<script> 
+var socket=io('http://localhost:3000/'); 
+// make connection with server from user side 
+socket.on('connect', function(){ 
+  console.log('Connected to Server');
+}); 
+
+document.getElementById('send').onclick = function() {
+    var message = document.getElementById('message');
+    socket.emit("message",message.value);
+    message.value = "";
+}
+</script> 
+
+</body>
+</html>

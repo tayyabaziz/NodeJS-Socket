@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-socket",
+  "version": "1.0.0",
+  "description": "Socket Server based on NodeJS",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tayyabaziz/NodeJS-Socket.git"
+  },
+  "keywords": [
+    "socket",
+    "nodejs"
+  ],
+  "author": "Tayyab Aziz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tayyabaziz/NodeJS-Socket/issues"
+  },
+  "homepage": "https://github.com/tayyabaziz/NodeJS-Socket#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "nodemon": "^2.0.1",
+    "socket.io": "^2.3.0"
+  }
+}
